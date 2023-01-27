@@ -1,0 +1,267 @@
+*, :after, :before {
+  box-sizing: border-box;
+  border: 0 solid #e5e7eb;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #212935;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a, input, span {
+  color: #f3f4f6;
+  font-family: 'Karla', sans-serif;
+  text-decoration: none;
+  letter-spacing: -.5px;
+}
+
+header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  height: 4rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: solid 1px #6a717fb3;
+}
+
+.global {
+  display: flex;
+  max-width: 80rem;
+  width: 100%;
+  height: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inner {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.area1 {
+  display: flex;  
+  width: 33rem;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 1000;
+}
+
+.menu {
+  display: flex;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  align-items: center;
+}
+
+.menu:hover > :not(:hover) {
+  color: #8899ac66;
+}
+
+.menu>a {
+  font-size: 1rem;
+  font-weight: 500;
+  transition: .3s ease;
+}
+
+.menu>a:not(:nth-child(1)) {
+  margin-left: 1.75rem;
+}
+
+.area2 {
+  display: flex;
+  align-items: center;
+  width: 29rem;
+}
+
+.search {
+  display: flex;
+  width: 100%;
+  max-width: 230px;
+  min-width: 160px;
+  height: 35px;
+  margin-right: auto;
+  border: 1px solid #374151;
+  border-radius: 43px;
+  background-color: #374151;
+  align-items: center;
+  transition: .15s ease;
+}
+
+.search:focus-within{
+  border-color: #0080ff;
+}
+
+.search>input {
+  width: 78%;    
+  padding: 0;
+  margin-left: 1rem;
+  background-color: transparent;
+  font-size: .825rem;
+  font-weight: 500;
+  line-height: 1rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.search>input::placeholder {
+  color: #9ca3af66;
+}
+
+.search>button {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  margin-top: -0.125rem;
+  margin-bottom: -0.125rem;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search>button>svg {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  color: #9ca3af;
+  transition: .15s ease;
+}
+
+.search>button>svg:hover {
+  color: #99ccff;
+}
+
+.area2>a {
+  display: flex;
+  padding: .525rem 1.2rem;
+  border-radius: 1.5rem;
+  font-size: .875rem;
+  font-weight: 600;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  line-height: 1rem;
+  letter-spacing: 0;
+  transition: border-color .3s ease, background-color .3s ease, color .3s ease, transform .3s ease;
+}
+
+.area2>a:hover {
+  border-color: #f3f4f6;
+  background-color: #f3f4f6;
+  color: #0080ff;
+  transform: scale(1.05);
+}
+
+.signIn {
+  margin-left: 1.5rem;
+  border: 1.6px solid #6a717fb3;
+  background-color: #374151;
+}
+
+.signUp {
+  margin-left: .625rem;
+  border: 1.6px solid #0080ff;
+  background-color: #0080ff;
+  color: #fff;
+}
+
+main {
+  display: block;
+  width: 100%;
+  max-width: 80rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 18px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  position: static;
+  width: 100%;
+  min-width: 0;
+  max-height: 100%;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  flex: 1 1 auto;
+}
+
+.main-area1 {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  flex-direction: column;
+}
+
+.mostQnaList>li {
+  max-width: 20rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.titleMargin {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  display: flex;
+  flex: 1 1 0%;
+  align-items: center;
+}
+
+.title>a {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+}
+
+.viewsAnswer {
+  display: flex;
+}
+
+.viewsAnswer>div {
+  display: flex;
+  flex: 1 1 0%;
+  align-items: center;
+}
+
+.viewsAnswer>div:nth-child(2) {
+  margin-left: 0.625rem;
+}
+
+.viewsAnswer>div>span {
+  font-size: .8rem;
+  line-height: 1.25rem;
+}
+
+.viewsAnswer>div:nth-child(1)>span {
+  color: #cee4fa;
+}
+
+.detail>a {
+  font-size: .8rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  word-break: break-all;
+}
