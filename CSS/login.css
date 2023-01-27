@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  width: 50vw;
+  width: 90vw;
   height: 60vh;
   display: grid;
   grid-template-columns: 100%;
@@ -158,6 +158,10 @@ a.forgot {
   .container {
     grid-template-columns: 50% 50%;
     grid-template-areas: "design login";
+  }
+
+  .container {
+    width: 50vw;
   }
 
   .design {
