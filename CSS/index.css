@@ -18,7 +18,7 @@ ul, li {
   margin: 0;
 }
 
-a, input, span {
+a, p, input, span {
   color: #f3f4f6;
   font-family: 'Karla', sans-serif;
   text-decoration: none;
@@ -216,20 +216,20 @@ main {
   float: left;
   width: 36%;
   height: 100%;
-  border-top: solid 1px #6a717fb3;
-  border-bottom: solid 1px #6a717fb3;
+  border-top: 1px solid #6a717fb3;
+  border-bottom: 1px solid #6a717fb3;
 }
 
 .ranking_list:nth-child(2) {
   padding-left: 1.25rem;
-  border-left: solid 1px #6a717fb3;
+  border-left: 1px solid #6a717fb3;
 }
 
 .ranking_list>li {
   width: 100%;
   max-width: 25rem;
   padding: 1rem .5rem;
-  border-bottom: solid 1px #6a717fb3;
+  border-bottom: 1px solid #6a717fb3;
 }
 
 .ranking_list>li:nth-child(4) {
@@ -292,4 +292,45 @@ main {
   color: #d1d5db;
   line-height: 1.25rem;
   word-break: break-all;
+}
+
+.right_side {
+  width: 280px;
+  position: relative;
+  float: right;
+}
+
+.side-content {
+  border: 0 solid #374151;
+  border-radius: 1rem;
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  background-color: #374151;
+}
+
+.sign_area {
+  border-bottom: 1px solid #ddd;
+  border-radius: 1rem 1rem 0 0;
+  padding: 20px 15px 19px;
+  letter-spacing: -1px;
+  background-color: #374151;
+}
+
+.top_text {
+  margin: 0 0 7px;
+  line-height: 1rem;
+  font-size: 11px;
+}
+
+.signin_button {
+  display: block;
+  margin: 0 -1px;
+  padding: 10px 0 4px;
+  border-radius: 4px;
+  border: 1px solid #6a717fb3;
+  background-color: #6a717fb3;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1rem;
 }
