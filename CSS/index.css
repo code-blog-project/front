@@ -10,6 +10,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #212935;
+  font-family: 'Karla', sans-serif;
 }
 
 ul, li {
@@ -18,9 +19,8 @@ ul, li {
   margin: 0;
 }
 
-a, p, input, span {
+a, p, input {
   color: #f3f4f6;
-  font-family: 'Karla', sans-serif;
   text-decoration: none;
   letter-spacing: -.2px;
 }
@@ -33,7 +33,7 @@ header {
   height: 4rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-  border-bottom: solid 1px #6a717fb3;
+  border-bottom: 1px solid #6a717fb3;
   background-color: #212935;
 }
 
@@ -197,116 +197,166 @@ main {
   margin-right: auto;
 }
 
-.container {
+.main-container {
   position: static;
   width: 100%;
   min-width: 0;
   max-height: 100%;
-  margin-left: 2.5rem;
   margin-right: 2.5rem;
   flex: 1 1 auto;
 }
 
 .ranking_section {
   display: flex;
+  flex-direction: column;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-.ranking_list {
-  float: left;
-  width: 36%;
-  height: 100%;
-  border-top: 1px solid #6a717fb3;
-  border-bottom: 1px solid #6a717fb3;
+.section-head {
+  position: relative;
+  color: #f3f4f6;
+  transition: .15s ease;
 }
 
-.ranking_list:nth-child(2) {
-  padding-left: 1.25rem;
-  border-left: 1px solid #6a717fb3;
-}
-
-.ranking_list>li {
+.head-background {
   width: 100%;
-  max-width: 25rem;
-  padding: 1rem .5rem;
-  border-bottom: 1px solid #6a717fb3;
+  height: 4rem;
+  background-color: rgb(55 61 81);
+  border-radius: 0.75rem;
 }
 
-.ranking_list>li:nth-child(4) {
-  border-bottom: none;
+.head-title {
+  display: flex;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  align-items: center;
 }
 
-.title-wrap {
+.head-title span {
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.section-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.section-list>li {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.section-list>li:not(:nth-child(1)) {
+  border-top: 1px solid #6a717fb3;
+}
+
+.info_summery {
   display: flex;
   margin-bottom: 0.5rem;
 }
 
-.title {
+.aat {
   display: flex;
   flex: 1 1 0%;
   align-items: center;
 }
 
-.title>a {
-  font-size: 1rem;
-  font-weight: 600;
+.user-profile {
+  display: block;
+  max-width: 100%;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 9999px;
+}
+
+.user-name {
+  display: inline;
+  padding-left: 0.25rem;
+  font-size: .875rem;
+  font-weight: 500;
   line-height: 1.25rem;
+  color: #d1d5db;
+  transition: .15s ease;
 }
 
-.views_answer {
-  display: flex;
-}
-
-.views_answer>div {
-  display: flex;
-  flex: 1 1 0%;
-  align-items: center;
-}
-
-.views_answer>div:nth-child(2) {
-  margin-left: 0.625rem;
-}
-
-.views_answer>div>span {
-  font-size: .725rem;
-  font-weight: 400;
+.write_time {
+  margin-left: .25rem;
+  font-size: .875rem;
+  font-weight: 500;
   line-height: 1.25rem;
-}
-
-.views_answer>div:nth-child(1)>span {
-  color: #99ccff;
-}
-
-.views_answer>div:nth-child(2)>span {
   color: #d1d5db;
 }
 
-.detail>a {
+.vaa {
+  display: flex;
+}
+
+.views, .answer_num {
+  display: flex;
+  flex: 1 1 0%;
+  align-items: center;
+}
+
+.answer_num {
+  margin-left: 0.625rem;
+}
+
+.views>span, .answer_num>span {
+  font-size: .875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+
+.views>span {
+  color: #99ccff;
+}
+
+.answer_num>span {
+  color: #d1d5db;
+}
+
+.title {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   width: fit-content;
-  font-size: .825rem;
-  font-weight: 400;
-  color: #d1d5db;
+  font-size: 1rem;
+  font-weight: 600;
   line-height: 1.25rem;
+  align-items: center;
   word-break: break-all;
+  transition: .15s ease;
+}
+
+.section-head:hover, .user-name:hover, .title:hover {
+  color: #99ccff;
 }
 
 .right_side {
-  width: 280px;
+  display: block;
+  flex: none;
+  margin-left: 2.5rem;
   position: relative;
-  float: right;
+  width: 280px;
 }
 
-.side-content {
+.side-container {
   border: 0 solid #374151;
   border-radius: 1rem;
   position: relative;
   width: 100%;
   height: 1000px;
+  margin-top: 2rem;
   background-color: #374151;
 }
 
