@@ -206,9 +206,8 @@ main {
   flex: 1 1 auto;
 }
 
-.ranking_section {
+section {
   display: flex;
-  flex-direction: column;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -261,6 +260,8 @@ main {
 .section-list>li {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  padding-left: .5rem;
+  padding-right: .5rem; 
 }
 
 .section-list>li:not(:nth-child(1)) {
@@ -348,6 +349,43 @@ main {
 
 .section-head:hover, .user-name:hover, .title:hover {
   color: #99ccff;
+}
+
+.mbs {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.content_wrap {
+  position: relative;
+  width: 100%;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  margin-top: 1.5rem;
+}
+
+.directory_area {
+  float: left;
+  width: 145px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+}
+
+.directory-list {
+  margin-top: 14px;
+}
+
+.directory-list>li {
+  margin-top: 8px;
+}
+
+.border {
+  position: absolute;
+  top: 0;
+  left: 165px;
+  width: 1px;
+  height: 100%;
+  background-color: #6a717fb3;
 }
 
 .right_side {
